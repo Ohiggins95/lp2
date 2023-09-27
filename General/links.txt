@@ -1,0 +1,17 @@
+correo profe Jorge Luis Vizcarra Cardenas
+pjvizcar@cibertec.edu.pe
+
+
+link carpeta LP
+https://cibertecedu-my.sharepoint.com/personal/pjvizcar_cibertec_edu_pe/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpjvizcar%5Fcibertec%5Fedu%5Fpe%2FDocuments%2FArchivos%20LP2&ga=1
+
+
+javax.persistence = son para mapeo
+
+clave mysql
+
+MySQL123$
+
+
+info profe
+https://padlet.com/pjvizcar/lenguaje-de-programaci-n-ii-c8r7u7xay6pkcdpj

@@ -1,0 +1,12 @@
+cd: d\Repositorio -- ingresar a carpeta
+
+git init -- inicializar 
+
+git add nombre de carpeta -- preparar la subida, aun no se sube.
+
+
+$ git commit -m "titulo descriptivo"-- confirmar la subida al repositorio de github
+
+git push
+
+Ohiggins95
