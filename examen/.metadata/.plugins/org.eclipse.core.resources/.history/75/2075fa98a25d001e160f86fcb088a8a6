@@ -1,0 +1,8 @@
+package com.examen_1.repositorio;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.cibertec.modelo.Libro;
+
+public class iMedicamentosRepositorio {
+
+}

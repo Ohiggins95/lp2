@@ -1,0 +1,29 @@
+package com.examen_1.controlador;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.examen_1.repositorio.iMedicamentosRepositorio;
+import com.examen_1.modelo.Medicamentos;
+
+@Controller
+@RequestMapping("/medicamentos")
+public class MedicamentosController {
+	
+	@Autowired
+	private iMedicamentosRepositorio medicamentosRepositorio;
+	
+	@GetMapping("/")
+	public String listarMedicamentos(Model model) {
+		List<Medicamentos> medicamentos = medicamentosRepositorio.findAll();
+		model.addAttributes("Medicamentos", medicamentos);
+		return "listarMedicamentos";
+	}
+	
+
+}

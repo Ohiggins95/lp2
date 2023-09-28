@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Listado de Medicamentos</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container mt-4">
+		<center>
+		<h1>Listado de Medicamentos</h1>
+		</center>
+		<br>
+		<br>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>ID Medicamento</th>
+					<th>Nombre</th>
+					<th>Descripción</th>
+					<th>Categoría</th>
+					<th>Precio</th>
+					<th>Stock</th>
+					<th>Proveedor</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				<tr th:each="medicamentos : ${medicamentos}">
+					<td th:text="${medicamentos.nombre}"></td>
+					<td th:text="${medicamentos.descripcion}"></td>
+					<td th:text="${medicamentos.categoria}"></td>
+					<td th:text="${medicamentos.precio}"></td>
+					<td th:text="${medicamentos.stock}"></td>
+					<td th:text="${medicamentos.proveedor}"></td>
+
+				</tr>
+			</tbody>
+		</table>
+		<div class="d-grid gap-2 col-6 mx-auto">
+		<a th:href="@{/medicamentos/nuevo}" class="btn btn-outline-primary">Nuevo Medicamento</a>
+		</div>
+	</div>
+</body>
+</html>
